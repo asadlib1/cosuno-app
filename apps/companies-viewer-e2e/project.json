@@ -1,0 +1,28 @@
+{
+  "root": "apps/companies-viewer-e2e",
+  "sourceRoot": "apps/companies-viewer-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/companies-viewer-e2e/cypress.json",
+        "devServerTarget": "companies-viewer:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "companies-viewer:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/companies-viewer-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["companies-viewer"]
+}

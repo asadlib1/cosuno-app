@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "companies-viewer": "apps/companies-viewer",
+    "companies-viewer-e2e": "apps/companies-viewer-e2e"
+  }
+}

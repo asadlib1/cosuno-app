@@ -1,0 +1,73 @@
+{
+  "root": "apps/companies-viewer",
+  "sourceRoot": "apps/companies-viewer/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/companies-viewer",
+        "index": "apps/companies-viewer/src/index.html",
+        "baseHref": "/",
+        "main": "apps/companies-viewer/src/main.tsx",
+        "polyfills": "apps/companies-viewer/src/polyfills.ts",
+        "tsConfig": "apps/companies-viewer/tsconfig.app.json",
+        "assets": [
+          "apps/companies-viewer/src/favicon.ico",
+          "apps/companies-viewer/src/assets"
+        ],
+        "styles": ["apps/companies-viewer/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/companies-viewer/src/environments/environment.ts",
+              "with": "apps/companies-viewer/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "companies-viewer:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "companies-viewer:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/companies-viewer/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/companies-viewer"],
+      "options": {
+        "jestConfig": "apps/companies-viewer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
