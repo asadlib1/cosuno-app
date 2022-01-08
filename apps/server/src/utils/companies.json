@@ -1,0 +1,16 @@
+[{
+	"name": "Company A",
+	"logo": "",
+	"specialities": ["Excavation", "Plumbing"],
+	"city": "Munich"
+}, {
+	"name": "Company B",
+	"logo": "",
+	"specialities": ["Excavation", "Plumbing"],
+	"city": "Munich"
+}, {
+	"name": "Company C",
+	"logo": "",
+	"specialities": ["Excavation", "Plumbing"],
+	"city": "Munich"
+}]
