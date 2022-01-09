@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nx run-many --target=serve --projects=server,companies-viewer",
+    "start:server": "nx run server:serve",
+    "start:client": "nx run companies-viewer:serve",
     "build": "nx build",
     "test": "nx test"
   },
