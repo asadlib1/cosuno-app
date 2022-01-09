@@ -67,6 +67,11 @@ export const companyTableColumns: ColumnsType<ICompany> = [
       { text: 'Excavation', value: 'Excavation' },
       { text: 'Plumbing', value: 'Plumbing' },
       { text: 'Electrical', value: 'Electrical' },
+      { text: 'Demolition', value: 'Demolition' },
+      { text: 'Agriculture', value: 'Agriculture' },
+      { text: 'Earthmoving', value: 'Earthmoving' },
+      { text: 'Machinery', value: 'Machinery' },
+      { text: 'Vehicle', value: 'Vehicle' },
     ],
     filterSearch: true,
     onFilter: (value: string | number | boolean, record: ICompany) => {

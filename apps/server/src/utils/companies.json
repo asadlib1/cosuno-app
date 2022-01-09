@@ -3,21 +3,28 @@
     "id": 1,
     "name": "Zeppelin GmbH",
     "logo": "https://bulkinside.com/wp-content/uploads/2016/10/Zeppelin-Systems-GmbH-BulkInside-208x52.png",
-    "specialities": ["Excavation", "Demolition", "Agriculture", "Earthmoving"],
+    "specialities": ["Excavation", "Demolition", "Earthmoving"],
     "city": "Munich"
   },
   {
     "id": 2,
-    "name": "Company B",
-    "logo": "",
-    "specialities": ["Excavation"],
-    "city": "Munich"
+    "name": "MULTIMON Group",
+    "logo": "http://eastconsult.eu/gallery/logo/multimon-good-resolution.jpg",
+    "specialities": ["Excavation", "Earthmoving"],
+    "city": "Stuttgart"
   },
   {
     "id": 3,
-    "name": "Company C",
-    "logo": "",
-    "specialities": ["Electrical"],
-    "city": "Munich"
+    "name": "Miltex GmbH",
+    "logo": "https://www.buerokompetenz.de/media/image/74/10/69/Miltex-Logo_1YeeseP5vAOzGM.png",
+    "specialities": ["Electrical", "Machinery"],
+    "city": "Berlin"
+  },
+  {
+    "id": 4,
+    "name": "Bagela Baumaschinen GmbH & Co.",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtyqdu9df202H_P75jBuejRH3WrdJu2sPghoedHyibgnE_Y2D9Gqu8dhcoCUoIbYn1Q&usqp=CAU",
+    "specialities": ["Agriculture", "Vehicle"],
+    "city": "Dortmund"
   }
 ]

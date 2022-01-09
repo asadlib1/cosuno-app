@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { companyTableColumns } from './utils/companies';
+import { companyTableColumns } from './utils/tableUtils';
 import { Table, notification } from 'antd';
 import apiClient from './utils/apiClient';
 
