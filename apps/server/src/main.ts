@@ -4,9 +4,18 @@
  */
 
 import express from 'express';
-import { port } from './config/configs';
+import { port, allowedOrigin } from './config/configs';
 import * as routes from './routes';
+import cors from 'cors';
+
 const app = express();
+
+// setting up cors
+const options: cors.CorsOptions = {
+  origin: allowedOrigin,
+  credentials: true,
+};
+app.use(cors(options));
 
 routes.default(app);
 
