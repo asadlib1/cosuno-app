@@ -3,33 +3,6 @@ import { SearchOutlined } from '@ant-design/icons';
 import { FilterDropdownProps } from 'antd/lib/table/interface';
 import { ColumnsType } from 'antd/es/table';
 
-export const companies: ICompany[] = [
-  {
-    name: 'Zeppelin GmbH',
-    logo: '',
-    specialities: ['Plumbing'],
-    city: 'Munich',
-  },
-  {
-    name: 'Company B',
-    logo: '',
-    specialities: ['Excavation'],
-    city: 'Munich',
-  },
-  {
-    name: 'Company C',
-    logo: '',
-    specialities: ['Electrical'],
-    city: 'Stuttgart',
-  },
-  {
-    name: 'Company D',
-    logo: '',
-    specialities: ['Electrical', 'Excavation'],
-    city: 'Berlin',
-  },
-];
-
 export interface ICompany {
   name: string;
   logo: string;
@@ -38,6 +11,10 @@ export interface ICompany {
 }
 
 export const companyTableColumns: ColumnsType<ICompany> = [
+  {
+    title: 'Logo',
+    dataIndex: 'logo',
+  },
   {
     title: 'Name',
     dataIndex: 'name',
@@ -65,10 +42,6 @@ export const companyTableColumns: ColumnsType<ICompany> = [
     onFilter: (value: string | number | boolean, record: ICompany) => {
       return record.name.toLowerCase().includes(value.toString().toLowerCase());
     },
-  },
-  {
-    title: 'Logo',
-    dataIndex: 'logo',
   },
   {
     title: 'Specialities',
