@@ -1,16 +1,20 @@
-[{
-	"name": "Company A",
-	"logo": "",
-	"specialities": ["Excavation", "Plumbing"],
-	"city": "Munich"
-}, {
-	"name": "Company B",
-	"logo": "",
-	"specialities": ["Excavation", "Plumbing"],
-	"city": "Munich"
-}, {
-	"name": "Company C",
-	"logo": "",
-	"specialities": ["Excavation", "Plumbing"],
-	"city": "Munich"
-}]
+[
+  {
+    "name": "Zeppelin GmbH",
+    "logo": "",
+    "specialities": ["Excavation", "Demolition", "Agriculture", "Earthmoving"],
+    "city": "Munich"
+  },
+  {
+    "name": "Company B",
+    "logo": "",
+    "specialities": ["Excavation"],
+    "city": "Munich"
+  },
+  {
+    "name": "Company C",
+    "logo": "",
+    "specialities": ["Electrical"],
+    "city": "Munich"
+  }
+]
