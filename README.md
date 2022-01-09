@@ -39,3 +39,11 @@ To execute client only:
 
 ## Things to implement in future:
 - This application would be better in future once added all unit tests, e2e tests and integration tests.
+
+# Screenshots
+
+<p align="center">
+  <img src="screenshots/homepage.png" title="Homepage">
+  <img src="screenshots/search.png" title="Search">
+  <img src="screenshots/spec-filter.png" title="Filter">
+</p>
