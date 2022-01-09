@@ -43,7 +43,10 @@ To execute client only:
 # Screenshots
 
 <p align="center">
+  Homepage
   <img src="screenshots/homepage.png" title="Homepage">
+  Search Companies
   <img src="screenshots/search.png" title="Search">
+  Filter by specialities
   <img src="screenshots/spec-filter.png" title="Filter">
 </p>
