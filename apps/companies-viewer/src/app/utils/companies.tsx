@@ -12,12 +12,25 @@ export interface ICompany {
 
 export const companyTableColumns: ColumnsType<ICompany> = [
   {
+    key: 'col-logo',
     title: 'Logo',
     dataIndex: 'logo',
+    width: '20%',
+    render: (logo: string) => {
+      if (logo) {
+        return (
+          <img src={logo} style={{ maxWidth: '200px', maxHeight: '200px' }} />
+        );
+      } else {
+        return <p>Unavailable Information</p>;
+      }
+    },
   },
   {
+    key: 'col-name',
     title: 'Name',
     dataIndex: 'name',
+    width: '30%',
     filterDropdown: ({
       setSelectedKeys,
       selectedKeys,
@@ -44,7 +57,9 @@ export const companyTableColumns: ColumnsType<ICompany> = [
     },
   },
   {
+    key: 'col-specialities',
     title: 'Specialities',
+    width: '30%',
     dataIndex: 'specialities',
     render: (specialities: string[]) =>
       specialities.map((service) => service).join(),
@@ -53,13 +68,13 @@ export const companyTableColumns: ColumnsType<ICompany> = [
       { text: 'Plumbing', value: 'Plumbing' },
       { text: 'Electrical', value: 'Electrical' },
     ],
-    width: '20%',
     filterSearch: true,
     onFilter: (value: string | number | boolean, record: ICompany) => {
       return record.specialities.includes(value.toString());
     },
   },
   {
+    key: 'col-city',
     title: 'City',
     dataIndex: 'city',
   },

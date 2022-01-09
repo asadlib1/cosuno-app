@@ -1,17 +1,20 @@
 [
   {
+    "id": 1,
     "name": "Zeppelin GmbH",
-    "logo": "",
+    "logo": "https://bulkinside.com/wp-content/uploads/2016/10/Zeppelin-Systems-GmbH-BulkInside-208x52.png",
     "specialities": ["Excavation", "Demolition", "Agriculture", "Earthmoving"],
     "city": "Munich"
   },
   {
+    "id": 2,
     "name": "Company B",
     "logo": "",
     "specialities": ["Excavation"],
     "city": "Munich"
   },
   {
+    "id": 3,
     "name": "Company C",
     "logo": "",
     "specialities": ["Electrical"],

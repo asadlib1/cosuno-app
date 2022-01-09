@@ -48,10 +48,16 @@ export function App() {
   return (
     <div>
       <header>
+        <h1 style={{ textAlign: 'center', margin: '20px' }}>
+          Cosuno Companies Explorer
+        </h1>
+      </header>
+      <header>
         <Table
           loading={loading}
           columns={companyTableColumns}
           dataSource={tableDataSource}
+          rowKey="id"
         ></Table>
       </header>
     </div>
